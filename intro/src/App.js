@@ -1,8 +1,19 @@
+import CategoryList from "./CategoryList";
+import Navi from "./Navi";
+import ProductList from "./ProductList";
+
 function App() {
+
   return (
+
     <div>
-      <h2>Hello From React ne haber dostum</h2>
+
+      <Navi/>
+      <CategoryList/>
+      <ProductList/>
+
     </div>
+
   );
 }
 
