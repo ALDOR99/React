@@ -10,7 +10,7 @@ function App() {
 
       <Navi/>
       <CategoryList/>
-      <ProductList/>
+      <ProductList/>      
 
     </div>
 
