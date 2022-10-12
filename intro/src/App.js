@@ -19,7 +19,7 @@ function App() {
 
       <Row>
         <Col xs="3">
-          <CategoryList info={productInfo}/>
+          <CategoryList info={categoryInfo}/>
         </Col>
 
         <Col xs="9">
