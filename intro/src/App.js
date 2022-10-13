@@ -6,7 +6,7 @@ import React, { Component } from 'react'
 
 //---------------------------------------------------------------------------
 export default class App extends Component {
-  state = { currentCategory: '', products: [] }
+  state = { currentCategory: '', products: [], cart: [] }
 
   componentDidMount() {
     this.getProducts()
@@ -27,15 +27,18 @@ export default class App extends Component {
       .then((response) => response.json())
       .then((data) => this.setState({ products: data }))
   }
+  addToCart = (product) => {
+    let newCart = this.state.cart
+    //var addedItem = newCart.find((c) => c.product.id === product.id)
+  }
+
   render() {
     let productInfo = { title: 'Product List1' }
     let categoryInfo = { title: 'Category List1' }
     return (
       <div>
         <Container>
-          <Row>
-            <Navi />
-          </Row>
+          <Navi />
 
           <Row>
             <Col xs="3">
