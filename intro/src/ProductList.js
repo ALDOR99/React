@@ -30,7 +30,7 @@ export default class ProductList extends Component {
                 <td>
                   <Button
                     color="primary"
-                    onClick={() => this.addToCart(product)}
+                    onClick={() => this.props.addToCart(product)}
                   >
                     Add
                   </Button>
